@@ -12,6 +12,9 @@ let hands = [];
 
 async function setup() {
   createCanvas(640, 480);
+
+  const element = document.body;
+  element.style.backgroundImage = "url(https://i6.glitter-graphics.org/pub/1603/1603416hqlmgh0nm7.jpg)";
   
   // Load the handPose model asynchronously
   handPose = await ml5.handPose();
